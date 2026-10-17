@@ -1,0 +1,36 @@
+{
+  "name": "fitness-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "test": "node --test --experimental-strip-types tests/frontend/stage5_settings.test.ts tests/frontend/stage4_dashboard_form_analysis.test.ts tests/frontend/real_data_exercises_workouts.test.ts tests/frontend/form_analysis_frontend.test.ts tests/frontend/form_history_frontend.test.ts tests/frontend/workout_plan_frontend.test.ts tests/frontend/generated_workout_execution.test.ts tests/frontend/program_contracts_frontend.test.ts tests/frontend/active_program_overview.test.ts tests/frontend/effective_prescription_execution.test.ts tests/frontend/adaptation_status_history.test.ts tests/frontend/program_lifecycle.test.ts tests/frontend/responsive_accessibility.test.ts",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@tanstack/react-query": "^5.102.8",
+    "clsx": "^2.1.1",
+    "firebase": "^12.18.0",
+    "framer-motion": "^13.1.1",
+    "lucide-react": "^1.34.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  }
+}
